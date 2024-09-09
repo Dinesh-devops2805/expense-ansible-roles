@@ -8,3 +8,4 @@ hostname:
   - private-ip-address
 compose: # This sets the 'ansible_host' variable to cnnect with the private IP address without 
   ansible_host: private_ip_address
+
