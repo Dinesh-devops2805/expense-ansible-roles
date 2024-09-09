@@ -26,6 +26,7 @@
 - name: install dependencies
   tags:
   - deployment
+  - webservers
   ansible.builtin.command: npm install
   args:
     chdir: /app
@@ -41,7 +42,7 @@
     - PyMySQL
     - cryptography
     executable: pip3.9
-    
+
 - name: import mysql data
   community.mysql.mysql_db:
     login_user: root
