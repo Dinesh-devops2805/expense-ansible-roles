@@ -25,7 +25,8 @@
 
 - name: install dependencies
   tags:
-  - dep- webserversloyment
+  - depployment
+  - webservers
   
   ansible.builtin.command: npm install
   args:
